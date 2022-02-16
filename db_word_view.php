@@ -3,6 +3,7 @@ require_once ("Engineer.php");
 $engineer = new Engineer();
 $table = "db_word";
 $list = $engineer->getContentsRandom($table);
+$url = "db_word_view.php";
 $number = 0;
 
 ?>
@@ -76,15 +77,17 @@ $number = 0;
 <?php foreach ($list as $value) {
     $number += 1;
     ?>
-    <div class="choice"><a href="db_word_check.php?no=<?php echo $value['no']; ?>&question=<?php echo $random+1; ?>&choice=<?php echo $number; ?>"><?php echo $number.". ".$value['word']; ?></a></div><br>
+    <div class="choice"><a href="check.php?no=<?php echo $value['no']; ?>&question=<?php echo $random+1; ?>&choice=<?php echo $number; ?>"><?php echo $number.". ".$value['word']; ?></a></div><br>
 
 <?php } ?>
 
 <!--    키보드로 숫자 입력하기-->
 <br><br>
-<form action="db_word_check.php" method="get">
+<form action="check.php" method="get">
     <label for="" hidden><input type="text" name="question" value="<?php echo $random+1; ?>"></label>
     <label for="input"><input type="text" name="choice" class="input" autofocus></label>
+    <input type="text" name="table" value="<?php echo $table ?>" hidden>
+    <input type="text" name="url" value="<?php echo $url ?>" hidden>
     <input type="submit" value="입력">
 </form>
 <br><br>
