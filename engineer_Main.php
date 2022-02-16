@@ -29,6 +29,7 @@
 <body>
     <h2>정보처리기사 퀴즈 전체 목록</h2><hr>
     <a href="d_pattern_view.php"><button>디자인패턴 Quiz</button></a><br>
-    <a href="security_view.php"><button>보안 용어 Quiz</button></a>
+    <a href="security_view.php"><button>보안 용어 Quiz</button></a><br>
+    <a href="db_word_view.php"><button>데이터베이스 용어 Quiz</button></a>
 </body>
 </html>
