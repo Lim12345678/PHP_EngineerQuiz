@@ -7,6 +7,10 @@ $choice = $_GET['choice'];
 $table = $_GET['table'];
 $url = $_GET['url'];
 
+echo $question;
+echo $choice;
+echo $table;
+echo $url;
 $list = $engineer->getContentsRandom($table);
 
 if($question == $choice) {

@@ -76,8 +76,7 @@ $number = 0;
     <?php foreach ($list as $value) {
         $number += 1;
     ?>
-    <div class="choice"><a href="check.php?no=<?php echo $value['no']; ?>&question=<?php echo $random+1; ?>&choice=<?php echo $number; ?>"><?php echo $number.". ".$value['word']; ?></a></div><br>
-
+    <div class="choice"><a href="check.php?no=<?php echo $value['no']; ?>&question=<?php echo $random+1; ?>&choice=<?php echo $number; ?>&url=<?php echo $url ?>&table=<?php echo $table ?>"><?php echo $number.". ".$value['word']; ?></a></div><br>
 <?php } ?>
 
 <!--    키보드로 숫자 입력하기-->
