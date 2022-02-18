@@ -30,7 +30,9 @@
     <h2>정보처리기사 퀴즈 전체 목록</h2><hr>
     <a href="d_pattern_view.php"><button>디자인패턴 Quiz</button></a><br>
     <a href="security_view.php"><button>보안 용어 Quiz</button></a><br>
-    <a href="db_word_view.php"><button>데이터베이스 용어 Quiz</button></a><br>
-    <a href="pg_word_view.php"><button>프로그래밍 언어 활용 용어 Quiz</button></a><br>
+    <a href="module_view.php"><button>모듈(결합도, 응집도) 용어 Quiz</button></a><br>
+    <a href="section1_word_view.php"><button>1과목 소프트웨어 설계 용어 Quiz</button></a><br>
+    <a href="db_word_view.php"><button>3과목 데이터베이스 용어 Quiz</button></a><br>
+    <a href="pg_word_view.php"><button>4과목 프로그래밍 언어 활용 용어 Quiz</button></a><br>
 </body>
 </html>

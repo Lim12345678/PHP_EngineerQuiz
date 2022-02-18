@@ -1,7 +1,7 @@
 <?php
 require_once ("Engineer.php");
 $engineer = new Engineer();
-$table = "pg_word";
+$table = "module";
 $list = $engineer->getContents($table);
 
 
@@ -47,26 +47,26 @@ $list = $engineer->getContents($table);
     </style>
 </head>
 <body>
-<br><h2>프로그래밍 언어 활용 용어 전체 리스트</h2><br><hr><br>
-<a href="pg_word_view.php"><button>돌아가기</button></a>
-<br><br>
-<div>
-    <table border="1">
-        <tr>
-            <th>NO</th>
-            <th>용어 이름</th>
-            <th>용어 설명</th>
-        </tr>
+    <br><h2>결합도, 응집도 용어 전체 리스트</h2><br><hr><br>
+    <a href="module_view.php"><button>돌아가기</button></a>
+    <br><br>
+    <div>
+        <table border="1">
+            <tr>
+                <th>NO</th>
+                <th>용어 이름</th>
+                <th>용어 설명</th>
+            </tr>
 
-        <?php foreach ($list as $value) {?>
+            <?php foreach ($list as $value) {?>
             <tr>
                 <td><?php echo $value['no']; ?></td>
                 <td><?php echo $value['word']; ?></td>
                 <td><?php echo $value['description']; ?></td>
             </tr>
-        <?php } ?>
-    </table>
-</div>
-<footer>Copyright &copy; 2022.02 Lim Ji Eun All right reserved.</footer>
+            <?php } ?>
+        </table>
+    </div>
+    <footer>Copyright &copy; 2022.02 Lim Ji Eun All right reserved.</footer>
 </body>
 </html>
